@@ -3,8 +3,8 @@ stages:
   - test
 
 build:
-  only: 
-    - master
+  #only: 
+  #  - master
   stage: build
   image: node:14.9.0-alpine
   script: 
@@ -19,8 +19,10 @@ build:
       - node_modules/
 
 test:
-  #only: 
-  #  - master
+  only:
+    - master
+  allow_failure: true
+  #hotfix for no tests present
   stage: test
   image: node:14.9.0-alpine
   script:
