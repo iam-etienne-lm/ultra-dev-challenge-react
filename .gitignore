@@ -1,0 +1,14 @@
+### dev
+.env
+node_modules
+
+### prod
+public
+
+### clutter
+.directory
+
+### IDE
+*.zip
+react-ydrjbg*
+
