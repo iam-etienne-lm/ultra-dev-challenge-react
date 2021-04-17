@@ -2,6 +2,10 @@ stages:
   - build
   - test
 
+cache:
+  paths:
+    - node_modules/
+
 build:
   #only: 
   #  - master
@@ -10,13 +14,19 @@ build:
   script: 
     - echo "Start building App"
     - npm install
-    - npm run build
+    #Hotfix npm run build cannot find index.html in ./public
+    - npm start
     - echo "Build successfully!"
   artifacts:
     expire_in: 1 hour
     paths:
-      - build
-      - node_modules/
+      - public
+
+lint:
+  stage: test
+  allow_failure: true
+  script:
+    - npm run lint --log-level=DEBUG
 
 test:
   only:
