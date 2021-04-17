@@ -27,3 +27,10 @@ This is a micro-bloggin frontend written in React inspired by Twitter
 -[ ] has some fancy auth
 -[ ] has some sort of connectivity
 -[ ] has some testing capability
+
+#### Workflow
+1. stackblitz - swyg remote IDE & dev
+1. vscode - local IDE
+1. docker-compose test dependancies
+1. gitlab - ci
+1. github - delivery

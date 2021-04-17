@@ -1,11 +1,16 @@
 import React from "react";
 import "./style.css";
 
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
 export default function App() {
   return (
-    <div>
-      <h1>Hello world!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div> 
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
     </div>
   );
 }
