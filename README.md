@@ -14,9 +14,11 @@ or **locally**
 This is a micro-bloggin frontend written in React inspired by Twitter
 
 #### Features
+-[x] is container friendly
 -[x] serves localhost:3000
 -[ ] has style
--[ ] chat message
+-[ ] send chat message
+-[ ] read chat message
 -[ ] search hashtag
 -[ ] login/logout
 -[ ] create account
@@ -24,3 +26,4 @@ This is a micro-bloggin frontend written in React inspired by Twitter
 -[ ] night mode styling switch
 -[ ] has some fancy auth
 -[ ] has some sort of connectivity
+-[ ] has some testing capability

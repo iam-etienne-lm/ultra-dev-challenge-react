@@ -12,10 +12,15 @@ build:
     - npm install
     - npm build
     - echo "Build successfully!"
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - build
+      - node_modules/
 
 test:
-  only: 
-    - master
+  #only: 
+  #  - master
   stage: test
   image: node:14.9.0-alpine
   script:
