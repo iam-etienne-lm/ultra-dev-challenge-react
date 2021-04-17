@@ -6,7 +6,7 @@ build:
   only: 
     - master
   stage: build
-  image: node
+  image: node:14.9.0-alpine
   script: 
     - echo "Start building App"
     - npm install
@@ -17,7 +17,7 @@ test:
   only: 
     - master
   stage: test
-  image: node
+  image: node:14.9.0-alpine
   script:
     - echo "Testing App"
     - npm install
