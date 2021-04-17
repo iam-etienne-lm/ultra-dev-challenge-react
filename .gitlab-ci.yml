@@ -14,19 +14,18 @@ build:
   script: 
     - echo "Start building App"
     - npm install
-    #Hotfix npm run build cannot find index.html in ./public
-    - npm start
+    - npm run build
     - echo "Build successfully!"
   artifacts:
     expire_in: 1 hour
     paths:
       - public
 
-lint:
-  stage: test
-  allow_failure: true
-  script:
-    - npm run lint --log-level=DEBUG
+#lint:
+#  stage: test
+#  allow_failure: true
+#  script:
+#    - npm run lint --log-level=DEBUG
 
 test:
   only:
